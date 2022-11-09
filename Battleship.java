@@ -63,7 +63,7 @@ public class Battleship {
             System.out.print("Enter a column to attack: ");
             int col = scanner.nextInt();
             if (!Location.isInBounds(row, col)) {
-                System.out.println("That guess it out of bounds!");
+                System.out.println("That guess is out of bounds!");
             } else {
                 Location loc = opponentBoard.getLocation(row, col);
                 if (loc.getStatus() == LocationStatus.EMPTY) {
